@@ -5,3 +5,7 @@
 *.ali
 
 .DS_Store
+
+.project
+
+.setting
