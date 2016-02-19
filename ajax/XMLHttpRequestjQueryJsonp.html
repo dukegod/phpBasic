@@ -39,8 +39,8 @@ body, input, select, button, h1 {
 $(document).ready(function(){ 
 	$("#search").click(function(){ 
 		$.ajax({ 
-		    type: "GET", 	
-			url: "http://127.0.0.1/ajax/serverjsonp.php?number=" + $("#keyword").val(),
+		  type: "GET", 	
+			url: "http://127.0.0.1:80/phpBasic/ajax/serverjsonp.php?number=" + $("#keyword").val(),
 			dataType: "jsonp",
 			jsonp: "callback",
 			success: function(data) {
@@ -59,7 +59,7 @@ $(document).ready(function(){
 	$("#save").click(function(){ 
 		$.ajax({ 
 		    type: "POST", 	
-			url: "http://127.0.0.1:8000/ajax/serverjsonp.php",
+			url: "http://127.0.0.1:80/phpBasic/ajax/serverjsonp.php",
 			data: {
 				name: $("#staffName").val(), 
 				number: $("#staffNumber").val(), 

@@ -41,7 +41,7 @@ $(document).ready(function(){
 	$("#search").click(function(){ 
 		$.ajax({ 
 		  type: "GET", 	
-			url: "serverjson2.php?number=" + $("#keyword").val(),
+			url: "serverjson.php?number=" + $("#keyword").val(),
 			dataType: "json",
 			success: function(data) {
 				if (data.success) { 

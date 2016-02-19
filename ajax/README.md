@@ -110,9 +110,6 @@ readystate :请求的状态。
 
 存储和交换文本信息的语法类似XML
 
-```
-
-```
 
 #### 解析 json 校验
 
@@ -145,6 +142,17 @@ jsonp 解决get方法的跨域请求
 
 一个页面声明，一个页面调用
 
+XHR2 解决跨域
+
+#### 代码说明
+
+server.php: 普通的服务
+
+serverjson.php: json的形式传输 
+
+serverjson2.php: XHR2的方式处理跨域
+
+serverjsonp.php:  jsonp的方式处理跨域
 
 
 
